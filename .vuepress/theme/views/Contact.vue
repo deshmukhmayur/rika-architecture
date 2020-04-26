@@ -35,7 +35,7 @@
     </article>
     <aside>
       <figure class="map">
-        <img :src="contact.map.image" alt="">
+        <img :src="$withBase(contact.map.image)" alt="">
         <a class="directions" :href="contact.map.directions" target="_blank"><ion-icon name="compass"></ion-icon> Directions</a>
       </figure>
     </aside>

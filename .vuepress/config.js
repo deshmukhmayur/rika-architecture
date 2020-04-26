@@ -1,6 +1,7 @@
 module.exports = {
   title: 'rika Architecture',
   description: 'A portfolio site for rika Architecture',
+  base: '/rika-architecture/',
   dest: 'dist',
   globalLayout: '/theme/layouts/GlobalLayout.vue',
   themeConfig: {

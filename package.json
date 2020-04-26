@@ -16,7 +16,7 @@
     "rika-architecture",
     "static-site"
   ],
-  "author": "Mayur Deshmukh",
+  "author": "Mayur Deshmukh <deshmukhmayur@outlook.com>",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.13.0",

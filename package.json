@@ -19,12 +19,12 @@
   "author": "Mayur Deshmukh <deshmukhmayur@outlook.com>",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "serve": "^11.2.0",
-    "vuepress": "^1.2.0"
+    "node-sass": "^4.14.0",
+    "sass-loader": "^8.0.2",
+    "serve": "^11.3.0",
+    "vuepress": "^1.4.1"
   },
   "dependencies": {
-    "vuepress-plugin-clean-urls": "^1.0.3"
+    "vuepress-plugin-clean-urls": "^1.1.1"
   }
 }

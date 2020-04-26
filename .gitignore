@@ -1,0 +1,9 @@
+# Project
+dist/
+Designs/
+
+# Node
+node_modules
+
+# System files
+.DS_Store

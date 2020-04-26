@@ -1,0 +1,30 @@
+{
+  "name": "rika-architecture",
+  "version": "1.0.0",
+  "description": "A portfolio site for rika Architecture",
+  "main": "index.js",
+  "scripts": {
+    "start": "vuepress dev -p 5000",
+    "build": "vuepress build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "vuepress",
+    "vue",
+    "rika-architecture",
+    "static-site"
+  ],
+  "author": "Mayur Deshmukh",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "serve": "^11.2.0",
+    "vuepress": "^1.2.0"
+  },
+  "dependencies": {
+    "vuepress-plugin-clean-urls": "^1.0.3"
+  }
+}

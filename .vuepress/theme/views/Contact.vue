@@ -56,7 +56,7 @@ export default {
 main {
   display: grid;
   grid-template-rows: 100%;
-  grid-template-columns: 3fr 5fr;
+  grid-template-columns: 25% 75%;
   align-items: center;
 
   & > article {
@@ -102,10 +102,12 @@ main {
 
   & > aside {
     padding: 1.5rem;
+    height: 100%;
 
     & > figure.map {
       margin: 0;
       width: 100%;
+      height: 100%;
       border-radius: .5rem;
       background: var(--grey-500);
       box-shadow: 0 .25rem .5rem rgba(0,0,0,.16);
@@ -114,7 +116,9 @@ main {
 
       & > img {
         width: 100%;
+        height: 100%;
         display: block;
+        object-fit: cover;
       }
 
       & > .directions {

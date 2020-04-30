@@ -4,7 +4,7 @@
     <section>
       <h5>{{ _project.title }}</h5>
       <p>
-        <span class="type">{{ _project.type }}</span>
+        <span class="timeline">{{ _project.startDate }} &ndash; {{ _project.completionDate }}</span>
         <span class="status">{{ _project.status }}</span>
       </p>
     </section>

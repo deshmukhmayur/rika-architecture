@@ -9,8 +9,8 @@
       </header>
 
       <section>
-        <label for="type">Type</label>
-        <p id="type">{{ project.type }}</p>
+        <label for="location">Location</label>
+        <p id="location">{{ project.location }}</p>
       </section>
 
       <section>
@@ -18,14 +18,17 @@
         <p id="status">{{ project.status }}</p>
       </section>
 
-      <section class="pull-to-bottom">
-        <label for="cost">Cost</label>
-        <p id="cost">{{ project.cost }}</p>
-      </section>
       <section>
-        <label for="client">Client</label>
-        <p id="client">{{ project.client }}</p>
+        <label for="timeline">Timeline</label>
+        <p id="timeline">{{ project.startDate }} &ndash; {{ project.completionDate }}</p>
       </section>
+
+      <section>
+        <label for="carpetArea">Carpet Area</label>
+        <p id="carpetArea">{{ project.carpetArea }}</p>
+      </section>
+
+      <Content class="description"/>
     </article>
 
     <aside>
@@ -108,9 +111,13 @@ main {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: 100%;
+  height: calc(100vh - var(--header-height, 4rem));
 
   & > article {
     padding: 3rem;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
 
@@ -120,6 +127,8 @@ main {
       align-items: flex-start;
 
       & > .btn.btn-back {
+        position: fixed;
+        top: calc(var(--header-height, 4rem) + 3rem);
         height: 2rem;
         width: 3rem;
         padding: 0;
@@ -139,7 +148,7 @@ main {
     }
 
     & > section {
-      &:not(:last-child) {
+      &:not(:last-of-type) {
         margin-bottom: 2rem;
       }
 
@@ -155,10 +164,12 @@ main {
         font-size: 1.25rem;
         margin: 0;
       }
+    }
 
-      &.pull-to-bottom {
-        margin-top: auto;
-      }
+    & .description {
+      margin: 1rem 0;
+      font-weight: 300;
+      font-size: 1.25rem;
     }
   }
 

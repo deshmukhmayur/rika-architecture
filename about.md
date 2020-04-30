@@ -2,7 +2,6 @@
 title: About Us
 view: about
 
-quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat egestas sem. Fusce cursus eros risus, in rutrum arcu luctus ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 people:
   - name: Richa Khawte
     reg_no: 377828928
@@ -22,3 +21,11 @@ people:
         link: https://instagram.com/kaustubhpardikar
 
 ---
+
+::: slot quote
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat egestas sem. Fusce cursus eros risus, in rutrum arcu luctus ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+:::
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat egestas sem. Fusce cursus eros risus, in rutrum arcu luctus ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.

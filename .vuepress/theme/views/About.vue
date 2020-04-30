@@ -1,7 +1,11 @@
 <template>
   <main>
     <h2>About Us</h2>
-    <blockquote>{{ data.quote }}</blockquote>
+    <blockquote>
+      <Content slot-key="quote"/>
+    </blockquote>
+
+    <Content class="about-abstract"/>
 
     <section>
       <div v-for="person of data.people">
@@ -47,11 +51,12 @@ main {
   & > blockquote {
     max-width: 60vw;
     text-align: center;
-    margin-bottom: 3rem;
+    margin: 1rem 3rem;
     padding: 1rem;
 
     color: rgba(255,255,255,.64);
     font-weight: 300;
+    font-size: 1.25rem;
     font-style: italic;
 
     quotes: "“" "”" "‘" "’";
@@ -72,6 +77,11 @@ main {
       content: close-quote;
       right: -1rem;
     }
+  }
+
+  & .about-abstract {
+    max-width: 80vw;
+    text-align: center;
   }
 
   & > section {

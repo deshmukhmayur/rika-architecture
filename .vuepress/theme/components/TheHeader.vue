@@ -12,7 +12,7 @@
         :exact="true"
         class="nav-link">{{ nav.text }}</router-link>
 
-      <the-button class="cta primary" :url="cta.link">{{ cta.text }}</the-button>
+      <the-button class="cta primary" :url="$withBase(cta.link)">{{ cta.text }}</the-button>
     </nav>
   </header>
 </template>

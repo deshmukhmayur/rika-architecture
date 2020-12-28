@@ -3,28 +3,33 @@
   "version": "1.0.0",
   "description": "A portfolio site for rika Architecture",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "start": "vuepress dev -p 5000",
-    "build": "vuepress build",
+    "start": "eleventy --serve --watch",
+    "build": "eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deshmukhmayur/rika-architecture.git"
   },
   "keywords": [
     "portfolio",
-    "website",
-    "vuepress",
-    "vue",
-    "rika-architecture",
-    "static-site"
+    "static-site",
+    "eleventy",
+    "11ty"
   ],
-  "author": "Mayur Deshmukh <deshmukhmayur@outlook.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "node-sass": "^4.14.0",
-    "sass-loader": "^8.0.2",
-    "serve": "^11.3.0",
-    "vuepress": "^1.4.1"
+  "author": {
+    "name": "Mayur Deshmukh",
+    "email": "deshmukhmayur@outlook.com",
+    "url": "https://deshmukhmayur.com"
   },
-  "dependencies": {
-    "vuepress-plugin-clean-urls": "^1.1.1"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/deshmukhmayur/rika-architecture/issues"
+  },
+  "homepage": "https://github.com/deshmukhmayur/rika-architecture#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
   }
 }

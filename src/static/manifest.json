@@ -1,0 +1,10 @@
+{
+  "name": "rika Architecture",
+  "short_name": "rika-architecture",
+  "theme_color": "#d00000",
+  "background_color": "#1a1a1a",
+  "display": "minimal-ui",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/?pwa=true"
+}

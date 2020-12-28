@@ -1,0 +1,9 @@
+/* Global styles go here... */
+body {
+  margin: 0;
+  font-size: 16px;
+
+  min-height: 100vh;
+  max-width: 100vw;
+  display: grid;
+}

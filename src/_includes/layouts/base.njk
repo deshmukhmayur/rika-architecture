@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <title>{{ title or site.title }}</title>
+  <base href="{{ site.baseHref or '/' }}">
+
+  {% include 'partials/_head.njk' %}
+</head>
+<body class="no-js">
+  <!-- Check for browser javascript support -->
+  <script>document.body.classList.remove('no-js')</script>
+
+  {{ content | safe }}
+
+  {% include 'partials/_foot.njk' %}
+</body>
+</html>

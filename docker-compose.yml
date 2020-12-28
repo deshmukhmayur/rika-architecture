@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  app:
+    image: rika-architecture
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/usr/src/app
+      - npm_packages:/usr/src/app/node_modules
+    ports:
+      - 8080:8080
+      - 3001:3001
+    # command: [ "sleep", "3600"]
+
+volumes:
+  npm_packages:

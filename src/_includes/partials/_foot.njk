@@ -1,0 +1,13 @@
+<!-- Register a service worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('sw.js', { scope: '/' })
+      .catch(err => {
+        console.error('Error registering the Service Worker:', err)
+      })
+  }
+</script>
+
+<!-- Custom js scripts -->
+<script src="/js/app.js"></script>

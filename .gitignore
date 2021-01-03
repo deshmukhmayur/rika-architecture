@@ -2,6 +2,9 @@
 build/
 tmp/
 
+# Project Secrets
+.env
+
 # Node
 node_modules/
 

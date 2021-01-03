@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-  <title>{{ title or site.title }}</title>
-  <base href="{{ site.baseHref or '/' }}">
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+  <base href="{{ env.BASE_HREF }}">
 
-  {% include 'partials/_head.njk' %}
+  {% include 'partials/_head.html' %}
 </head>
 <body class="no-js">
   <!-- Check for browser javascript support -->
@@ -15,6 +15,6 @@
 
   {{ content | safe }}
 
-  {% include 'partials/_foot.njk' %}
+  {% include 'partials/_foot.html' %}
 </body>
 </html>

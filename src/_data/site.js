@@ -1,12 +1,10 @@
-/* Global site metadata goes here... */
+const spreadsheet = require('./spreadsheet')
 
-module.exports = {
-  title: 'rika Architecture',
-  description: 'A portfolio site for rika Architecture',
-  url: 'https://rikaarchitecture.com',
-  logo: 'https://rikaarchitecture.com/img/logo.png',
-  author: {
-    name: 'Mayur Deshmukh',
-    url: 'https://deshmukhmayur.com'
-  }
+module.exports = async () => {
+  const { site } = await spreadsheet()
+  /* Convert the site info into a easily usable object */
+  return site.reduce((metadata, row) => {
+    metadata[row[0]] = row[1]
+    return metadata
+  }, {})
 }

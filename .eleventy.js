@@ -1,11 +1,15 @@
 module.exports = function (config) {
   config.addPassthroughCopy({ './src/static': '.' })
 
+  config.setLiquidOptions({
+    dynamicPartials: true,
+    extname: '.html'
+  })
+
   return {
     templateFormats: [
-      "md",
-      "njk",
-      "html",
+      'md',
+      'html',
     ],
     dir: {
       input: './src',

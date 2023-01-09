@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/deshmukhmayur/rika-architecture#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-cache-assets": "^2.0.4",
     "dotenv-safe": "^8.2.0",
     "googleapis": "^66.0.0"
